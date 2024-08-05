@@ -12,7 +12,7 @@ const router = createBrowserRouter(
     },
   ],
   {
-    basename: "/bravustatical",
+    basename: "/bravus-tatical",
   }
 );
 
