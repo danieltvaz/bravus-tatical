@@ -1,6 +1,5 @@
 import Contact from "../components/contact";
 import { Link } from "react-router-dom";
-import Typography from "../../../../../components/typography";
 import logo from "../../../../../assets/logo/logo_bravus.png";
 import styled from "styled-components";
 
@@ -60,19 +59,13 @@ export default function TopHeaderMenu() {
         <Logo src={logo} />
       </MenuItem>
       <MenuItem>
-        <MenuLink as="a" href="" color="#fff" fontSize="2rem" fontWeight="600" fontStyle="italic" textDecoration="none">
-          INÍCIO
-        </MenuLink>
+        <MenuLink to={""}>INÍCIO</MenuLink>
       </MenuItem>
       <MenuItem>
-        <MenuLink as="a" href="" color="#fff" fontSize="2rem" fontWeight="600" fontStyle="italic" textDecoration="none">
-          LOJA
-        </MenuLink>
+        <MenuLink to={""}>LOJA</MenuLink>
       </MenuItem>
       <MenuItem>
-        <MenuLink as="a" href="" color="#fff" fontSize="2rem" fontWeight="600" fontStyle="italic" textDecoration="none">
-          CAMPOS
-        </MenuLink>
+        <MenuLink to={""}>CAMPOS</MenuLink>
       </MenuItem>
       <MenuItem>
         <Contact />

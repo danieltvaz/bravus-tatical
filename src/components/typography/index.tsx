@@ -1,7 +1,5 @@
 import { CSSProperties, ComponentProps } from "react";
 
-import { CSS } from "styled-components/dist/types";
-
 type TypographyProps<T extends keyof JSX.IntrinsicElements> = {
   as?: T;
   color: string;
