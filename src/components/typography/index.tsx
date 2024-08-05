@@ -7,6 +7,8 @@ type TypographyProps<T extends keyof JSX.IntrinsicElements> = {
   fontWeight: string;
   textDecoration?: CSSProperties["textDecoration"];
   fontStyle?: CSSProperties["fontStyle"];
+  textAlign?: CSSProperties["textAlign"];
+  maxWidth?: CSSProperties["maxWidth"];
 } & ComponentProps<T>;
 
 export default function Typography<ElementType extends keyof JSX.IntrinsicElements>({
@@ -16,9 +18,13 @@ export default function Typography<ElementType extends keyof JSX.IntrinsicElemen
   fontWeight,
   textDecoration,
   fontStyle,
+  textAlign,
+  maxWidth,
   ...props
 }: TypographyProps<ElementType>) {
   const Component = as || "span";
   //@ts-ignore
-  return <Component style={{ color, fontSize, fontWeight, textDecoration, fontStyle }} {...props} />;
+  return (
+    <Component style={{ color, fontSize, fontWeight, textDecoration, fontStyle, textAlign, maxWidth }} {...props} />
+  );
 }

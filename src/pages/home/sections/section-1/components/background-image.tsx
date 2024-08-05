@@ -6,7 +6,7 @@ const ImageContainer = styled.div`
   background-image: url(${backgroundImage});
   background-size: cover;
   background-repeat: no-repeat;
-  height: calc(100vh - 48px);
+  height: calc(100vh - 36px);
 
   @media screen and (max-width: 999px) {
   }
