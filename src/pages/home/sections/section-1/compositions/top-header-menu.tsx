@@ -1,4 +1,5 @@
 import Contact from "../components/contact";
+import { Link } from "react-router-dom";
 import Typography from "../../../../../components/typography";
 import logo from "../../../../../assets/logo/logo_bravus.png";
 import styled from "styled-components";
@@ -40,6 +41,18 @@ const Logo = styled.img`
   }
 `;
 
+const MenuLink = styled(Link)`
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  font-style: italic;
+  transition: color 1s;
+  &:hover {
+    color: red;
+  }
+`;
+
 export default function TopHeaderMenu() {
   return (
     <Container>
@@ -47,40 +60,19 @@ export default function TopHeaderMenu() {
         <Logo src={logo} />
       </MenuItem>
       <MenuItem>
-        <Typography
-          as="a"
-          href=""
-          color="#fff"
-          fontSize="2rem"
-          fontWeight="600"
-          fontStyle="italic"
-          textDecoration="none">
+        <MenuLink as="a" href="" color="#fff" fontSize="2rem" fontWeight="600" fontStyle="italic" textDecoration="none">
           INÍCIO
-        </Typography>
+        </MenuLink>
       </MenuItem>
       <MenuItem>
-        <Typography
-          as="a"
-          href=""
-          color="#fff"
-          fontSize="2rem"
-          fontWeight="600"
-          fontStyle="italic"
-          textDecoration="none">
+        <MenuLink as="a" href="" color="#fff" fontSize="2rem" fontWeight="600" fontStyle="italic" textDecoration="none">
           LOJA
-        </Typography>
+        </MenuLink>
       </MenuItem>
       <MenuItem>
-        <Typography
-          as="a"
-          href=""
-          color="#fff"
-          fontSize="2rem"
-          fontWeight="600"
-          fontStyle="italic"
-          textDecoration="none">
+        <MenuLink as="a" href="" color="#fff" fontSize="2rem" fontWeight="600" fontStyle="italic" textDecoration="none">
           CAMPOS
-        </Typography>
+        </MenuLink>
       </MenuItem>
       <MenuItem>
         <Contact />

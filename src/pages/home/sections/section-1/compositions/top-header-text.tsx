@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  height: 48px;
+  min-height: 36px;
   background-color: red;
   display: flex;
   justify-content: center;

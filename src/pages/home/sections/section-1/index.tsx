@@ -9,7 +9,7 @@ export default function HomePageSection1() {
     <>
       <SectionContainer style={{ minHeight: "auto", padding: "0px" }}>
         <TopHeader>
-          <Typography color="#fff" fontSize="24px" fontWeight="600" as="h1">
+          <Typography color="#fff" fontSize="1rem" fontWeight="600" as="h1">
             A MAIOR LOJA DE AIRSOFT DO RIO DE JANEIRO
           </Typography>
         </TopHeader>
