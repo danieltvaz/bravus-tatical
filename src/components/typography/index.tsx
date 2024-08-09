@@ -25,6 +25,7 @@ export default function Typography<ElementType extends keyof JSX.IntrinsicElemen
   const Component = as || "span";
   //@ts-ignore
   return (
+    //@ts-ignore
     <Component style={{ color, fontSize, fontWeight, textDecoration, fontStyle, textAlign, maxWidth }} {...props} />
   );
 }
