@@ -11,10 +11,10 @@ type Props = {
   children?: ReactNode;
 };
 
-const Row = styled.div.attrs((props) => ({ style: { ...props } }))`
+const Row = styled.div.attrs((props) => ({ style: { ...props.style } }))`
   display: flex;
 `;
 
 export default function FlexRow(props: Props) {
-  return <Row {...props}>{props.children}</Row>;
+  return <Row style={{ ...props }}>{props.children}</Row>;
 }
