@@ -23,10 +23,13 @@ export const Button = styled.button.attrs<Props>((props) => ({
   font-style: normal;
   border-radius: 12px;
   width: 128px;
-  height: 42px;
+  height: 38px;
   padding: 12px;
   font-weight: 700;
   border: none;
   background-color: red;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
