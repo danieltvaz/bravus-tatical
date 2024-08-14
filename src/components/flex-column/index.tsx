@@ -15,11 +15,11 @@ type Props = {
   left?: CSSProperties["left"];
 };
 
-const Row = styled.div.attrs((props) => ({ style: { ...props.style } }))`
+const Column = styled.div.attrs((props) => ({ style: { ...props.style } }))`
   display: flex;
   flex-direction: column;
 `;
 
 export default function FlexColumn(props: Props) {
-  return <Row style={{ ...props }}>{props.children}</Row>;
+  return <Column style={{ ...props }}>{props.children}</Column>;
 }
