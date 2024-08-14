@@ -58,7 +58,7 @@ export default function HomePageSection3() {
           </FlexRow>
         </FlexColumn>
         <FlexColumn position="relative">
-          <img src={equipamento} style={{ maxWidth: "100vw" }} />
+          <img src={equipamento} style={{ maxWidth: "100vw", width: "90%" }} />
           <Button variant="button" style={{ position: "absolute", bottom: "20%", right: "5%" }}>
             <Typography color="#fff" fontSize="18px" fontWeight="600">
               ALUGAR
