@@ -6,13 +6,18 @@ type Props = {
   justifyContent?: CSSProperties["justifyContent"];
   alignItems?: CSSProperties["alignItems"];
   gap?: CSSProperties["gap"];
-  height?: CSSProperties["height"];
-  width?: CSSProperties["width"];
+  minHeight?: CSSProperties["minHeight"];
+  minWidth?: CSSProperties["width"];
   children?: ReactNode;
+  zIndex?: CSSProperties["zIndex"];
+  position?: CSSProperties["position"];
+  top?: CSSProperties["top"];
+  left?: CSSProperties["left"];
 };
 
 const Row = styled.div.attrs((props) => ({ style: { ...props.style } }))`
   display: flex;
+  flex-wrap: wrap;
 `;
 
 export default function FlexRow(props: Props) {
